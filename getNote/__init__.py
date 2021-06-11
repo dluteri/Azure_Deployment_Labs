@@ -11,7 +11,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python getPosts trigger function processed a request.')
 
     try:
-        url = "mongodb://lutericosmosdb:bLRIaVzayD1h53v5L7okYYwSdcBjYItT6vFqCT4aTkAD9vGXMsWXsfWt73px2XgYzLjfm95MxYvB2BkzIhzhkA==@lutericosmosdb.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@lutericosmosdb@"
+        url = "mongodb://lutericosmosdb:7DJBFa5Ir2aPqnvgFBmrYwQYtmq6zTYz8DKzNhNbzodb7DdMMHzKExsm44ivfMV4cqFodKWO1y43BAoggyVrrw==@lutericosmosdb.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@lutericosmosdb@"
         #os.environ['luterimongodbconnectionstring']
         client = pymongo.MongoClient(url)
         database = client['lutericosmosdb']

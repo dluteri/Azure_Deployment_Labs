@@ -12,7 +12,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     #put your live url here
-    response = requests.get('https://luteripythonfunctionapp.azurewebsites.net/api/getnotes')
+    response = requests.get('https://luteriapp.azurewebsites.net/api/getnotes')
     notes = response.json[]
     return render_template("index.html", notes=notes)
     #request_url = ""
